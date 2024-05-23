@@ -82,22 +82,54 @@ if ($res['idstart'] <> 0) {
             text-align: center;
         }
 
+        body {
+            /* background-color: #fff; */
+            
+        }
+
         .waitB {
-            border: 2px solid orangered;
-            color: #fff;
+
+ 
+            width: 50%;
+
+            background: rgba(234, 25, 25, 0.5);
+            -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(234, 25, 25, 0.25);
+
+            border-radius: 8px;
+            margin: auto;
+            padding: 30px;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px);
+            /* background: rgba(255, 255, 255, 0.4); */
+            background-color: #21D4FD;
+
+
+            /* background-color: #21D4FD;
+            background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%); */
+
+            /* color: #fff; */
+            /* border: 2px solid orangered;
             font-size: 30px;
             width: 50%;
             margin: auto;
             padding: 20px;
             background-color: #21D4FD;
             background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
-
-
-            /* text-shadow: #2BD2FF; */
-            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+ 
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25); */
 
 
         }
+
+
+
+
+         
+ 
+
     </style>
 </head>
 
@@ -140,21 +172,23 @@ if ($res['idstart'] <> 0) {
                 <?php echo $psp; ?>
             </div>
             <div class="card-body">
-                
+
                 <a href="ps_jud01.php?j=<?= $_GET['j'] ?>" class="btn btn-success btn-lg ">POOMSAE 1</a>
                 <a href="ps_jud02.php?j=<?= $_GET['j'] ?>" class="btn btn-primary btn-lg ">POOMSAE 2</a>
                 <a href="ps_jud_flag.php?j=<?= $_GET['j'] ?>" class="btn btn-danger btn-lg ">ยกธง</a>
                 <a href="ps_jud01_new.php?j=<?= $_GET['j'] ?>" class="btn btn-info btn-lg ">POOMSAE 1 (New)</a>
-                <a href="ps_jud01_free.php?j=<?= $_GET['j'] ?>" class="btn btn-success btn-lg "  style="background-color: #da30f8;">PS FREE</a>
+                <a href="ps_jud01_free.php?j=<?= $_GET['j'] ?>" class="btn btn-success btn-lg " style="background-color: #da30f8;">PS FREE</a>
             </div>
 
         </div>
     <?php } else { ?>
-        <div class="col waitA">
+        <div class="col waitA"> 
             <h4 class="text-center">
                 รอแป๊บ
             </h4>
-            <div class="waitB">WAITING FOR NEXT PLAYER</div>
+            <div class="waitB">
+                WAITING FOR NEXT PLAYER
+            </div>
         </div>
     <?php } ?>
 
